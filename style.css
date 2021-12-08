@@ -1,0 +1,927 @@
+/*################################################################################################################################
+Basics
+################################################################################################################################*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 60%;
+  scroll-behavior: smooth;
+}
+.sub-menu {
+	padding: 10px;
+	width: 120px;
+  text-decoration: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #415f03;
+
+  
+}
+.sub-menu li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.sub-menu ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+
+} 
+
+.hidden {
+	display: none;
+}
+.visible {
+	display: visible;
+}
+body {
+  min-width: 350px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.9rem;
+  line-height: 3.3rem;
+}
+
+cite {
+  font-style: normal;
+}
+main {
+  background-color: #f6fee6;
+}
+h1,
+h2,
+h3,
+h6,
+h5
+ {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+h4 {
+  font-family: "Playfair Display", serif;
+  text-align: left;
+}
+.headline {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.subheadline {
+  max-width: 600px;
+  margin: 0px auto;
+
+  text-align: center;
+}
+
+.cta { 
+  display: block;
+
+  margin: 0px auto;
+  padding: 12px 48px;
+
+  font-weight: bold;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: white;
+  border-radius: 50px;
+  background-color: #5F0341;
+
+}
+
+.header__hero,
+.section_content
+ {
+  padding: 16px;
+}
+
+/*################################################################################################################################
+Side menu
+################################################################################################################################*/
+
+.sidemenu {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  right: 0px;
+
+  padding: 16px;
+
+
+  transform: translateY(-55%);
+
+ 
+}
+
+.sidemenu .nav__ul {
+  display: initial;
+
+  text-align: right;
+}
+
+.sidemenu .nav__link {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/*################################################################################################################################
+Header + nav
+################################################################################################################################*/
+
+.header__hero {
+  position: relative;
+  
+  height: 80vh;
+  min-height: 710px;
+  background-color: #415f03;
+ 
+}
+.hero__headline {
+  padding: 60px 0px 38px 0px;
+
+  font-size: 5.2rem;
+  font-weight: normal;
+
+  color: white;
+}
+
+.hero__subheadline {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero__image {
+
+  display: flex;
+  max-width: 60%;
+  margin: 0px auto;
+}
+
+.hero__cta {
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+
+  width: 180px;
+
+  transform: translateX(-50%);
+
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.cta:hover {
+  background-color: #5F0341;
+  color: white;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.cta:active {
+  text-decoration: underline;
+}
+
+.header__topbar {
+  margin: 0px auto;
+
+  background-color: #415f03;
+}
+
+.nav__ul {
+  display: flex;
+
+  min-width: 320px;
+
+  list-style-type: none;
+
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+
+.nav__link {
+  font-size: 1.6rem;
+
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.nav__link-admin {
+  color: grey;
+}
+.nav__li {
+  padding: 12px;
+  font-size: 2rem;
+  
+}
+.nav__link:hover {
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid white;
+}
+
+.nav__link--current {
+  font-weight: bold;
+
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/*################################################################################################################################
+Index menu
+################################################################################################################################*/
+
+.section_content { 
+  overflow: hidden;
+
+  position: relative;
+
+  padding-bottom: 120px;
+
+}
+
+
+.section_content__headline {
+  padding: 64px 0px 38px 0px;
+
+  color: black;
+}
+
+.section_content__subheadline {
+  margin-bottom: 90px;
+  
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/*################################################################################################################################
+Beer images
+################################################################################################################################*/
+
+.container__images {
+  display:     grid;
+
+  max-width: 960px;
+  margin: 0px auto;
+  align-items: center;
+  grid-template-columns: 3fr 2fr;
+}
+
+
+.container__images img {
+  height: auto;
+  max-width: 100%;
+}
+
+.container__images img:nth-of-type(1) {
+  max-width: 100%;
+}
+
+.container__images img:nth-of-type(2) {
+  max-width: 100%;
+}
+
+/*################################################################################################################################
+Beer list
+################################################################################################################################*/
+.beer_list__container img {
+  margin:auto;
+  max-width: 50%;
+  /* max-height: 50%; */
+  }
+
+.beer_list__headline {
+  padding: 64px 0px 38px 0px;
+
+  color: black;
+}
+
+.beer_list__subheadline {
+  margin-bottom: 32px;
+
+  color: black;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0px auto;
+  padding: 0px 16px;
+}
+
+.beer_list__container {
+  display: flex;
+  -ms-flex-pack: justify; 
+  justify-content: space-between;
+}
+.cards__subheadline {
+  margin: 14px 0px;
+
+  text-align: center;
+
+  color: #4e4e4e;
+}
+.beer_list__cards {
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 380px;
+  margin: 24px 24px;
+  padding: 24px;
+  padding-bottom: 36px;
+
+  border-radius: 12px;
+  background-color: white;
+
+  -ms-flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+
+/*################################################################################################################################
+Footer
+################################################################################################################################*/
+
+.footer {
+  background: #415f03;
+} 
+
+.container__footer {
+  max-width: 750px;
+  padding: 0;
+  justify-content: start;
+}
+
+.footer__nav {
+  max-width: 800px;
+  align-self: flex-start;
+}
+
+
+  @media (max-width: 900px) {
+    .footer__nav > .nav__ul {
+    justify-content: center;
+  }
+
+  }
+
+.footer__copyright {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: white;
+  padding: 3.5rem 0;
+}
+
+/*################################################################################################################################
+Landing page responsivity
+################################################################################################################################*/
+
+.hero__image {
+  display: none;
+}
+@media (min-width: 1200px) {
+
+  .hero__image {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .beer_list__container {
+  flex-direction: column;
+  }
+
+
+}
+
+
+@media (max-width: 850px) {
+  .hero__headline {
+    padding: 11px 0px 38px 0px;
+
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+
+  .container.header__nav {
+    padding: 0px;
+  }
+
+  .container__footer {
+    box-orient: vertical;
+    box-direction: normal;
+    flex-direction: column;
+    
+  
+  }
+
+  .footer__copyright {
+    padding: 32px auto;
+
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+
+  .subheadline {
+    font-size: 1.65rem;
+    line-height: 2.7rem;
+  }
+
+
+  .container__footer {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 355px) {
+  .nav__link {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-height: 570px) {
+
+
+  .hero__headline {
+    padding: 11px 0px 8px 0px;
+  }
+
+  .hero__cta {
+    bottom: 8%;
+  }
+}
+
+
+/*################################################################################################################################
+Team
+################################################################################################################################*/
+
+.side__container {
+  background-color: #f6fee6;
+}
+.side__container {
+  display:         flex;
+}
+
+.side__container > div {
+  display:         flex;
+  height: 800px;
+  flex: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.side .header__hero {
+  height: 800px;
+  padding: 0px;
+
+  background: white;
+}
+
+.side .hero__header {
+  text-align: left;
+}
+
+.side .text__container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.side .hero__headline {
+  padding: 0px 0px 38px 0px;;
+
+  line-height: 6rem;
+
+  text-align: left;
+
+  color: black;
+}
+
+.side .hero__subheadline {
+  max-width: initial;
+  margin: 16px 0px;
+
+  text-align: left;
+
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.side .hero__cta {
+  position: initial;
+  top: initial;
+  right: initial;
+  bottom: initial;
+  left: initial;
+
+  width: 250px;
+  margin: 36px 0px;
+
+  transform: initial;
+}
+
+.team__bg {
+  width: 100%;
+  height: auto;
+
+  background: url("images/chef.jpg") center center;
+  background-size: cover;
+}
+
+/*################################################################################################################################
+Team responsivity
+################################################################################################################################*/
+
+@media (max-width: 900px) {
+  .side__container {
+    display: initial;
+  }
+
+  .side .header__hero,
+  .side__container > div {
+    height: initial;
+    min-height: 500px;
+    margin-bottom: 48px;
+  }
+
+  .side .hero__headline {
+    padding: 32px 0px 24px 0px;
+  }
+
+
+  .side .hero__headline {
+    line-height: 4rem;
+  }
+}
+
+/*################################################################################################################################
+Contact
+################################################################################################################################*/
+
+.contact__bg {
+  width: 100%;
+  height: auto;
+
+  background: url("images/restaurace.jpg") center center;
+  background-size: cover;
+}
+.iframe-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 400px !important;
+}
+.map {
+  position: relative;
+
+  height: 400px;
+}
+
+.address__container {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+/*################################################################################################################################
+Contact responsivity
+################################################################################################################################*/
+
+@media (max-width: 900px) {
+  .address__container {
+    display: initial;
+  }
+}
+
+
+/*################################################################################################################################
+Reservation
+################################################################################################################################*/
+.reservation_table tr {
+  border: none;
+  background-color:#D3D9C7;
+
+}
+.reservation_table td {
+  border: none;
+}
+.reservation .header__hero {
+  height: initial;
+  background-color:#f6fee6
+}
+.reservation_form {
+  overflow-x:auto;
+}
+.reservation__container {
+
+  display: flex;
+  margin-top: 42px;
+  margin-bottom: 64px;
+  padding: 32px;
+
+ 
+  box-shadow: 0px 16px 52px #D3D9C7;
+  backdrop-filter: blur(20px);
+}
+
+.image__detail {
+  width: 100%;
+  height: auto;
+
+  border-radius: 12px;
+}
+
+.image_wrapper {
+  margin-right: 30px;
+
+  border-radius: 12px;
+  flex: 33%;
+}
+
+.description {
+  padding: 64px;
+
+  border-radius: 12px;
+  background-color: #D3D9C7;
+
+  flex: 66%;
+}
+
+.description .headline {
+  margin-bottom: 32px;
+
+  font-size: 5.2rem;
+  font-weight: normal;
+
+  text-align: left;
+}
+
+.reservation .subheadline {
+  margin-bottom: 32px;
+
+  text-align: left;
+}
+
+
+select,
+input {
+  height: 42px;
+  padding: 8px;
+  
+  font-size: inherit;
+  line-height: 3rem;
+
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: white;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  
+}
+.table_resp {
+  overflow-x:auto;
+}
+
+table tr {
+  background-color: white;
+  color: black;
+  height: 46px;
+}
+table th {
+  background-color:#f6fee6 ;
+}
+table tr td {
+  min-width: 200px;
+  
+}
+table tr td{
+  border: 2px solid #ddd;
+}
+
+table tr .food_name {
+  text-align: left;
+  padding-left: 5%;
+  min-width: 400px;
+}
+
+
+.reservation .cta {
+  width: 200px;
+  margin: 24px 0px 0px 0px;
+}
+
+.transport {
+  display: block;
+
+  margin-top: 26px;
+  padding-top: 22px;
+  padding-left: 19px;
+
+  color: #487b00;
+  border-top: 1px solid #b1b1b1;
+}
+/*################################################################################################################################
+Loin
+##############################################################*/
+.login_body {
+  background-color: #415f03;
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.login_form__wrapper--center {
+  justify-content: center;
+}
+
+.login_form_button:hover {
+  background-color: #5F0341;
+  color: white;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.login_form {
+  background-color:#f6fee6 ;
+  border: 5px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 270px;
+}
+.login_form input, label, button {
+  margin: 10px;
+  text-decoration: none;
+
+}
+.login_form label {
+  max-width: 100px;
+}
+.login_form input {
+  border: 1px solid black;
+  max-width: 200px;
+}
+.login_form_button {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  color: white;
+  border-radius: 50px;
+  background-color: #5F0341;
+  border: 0px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 0.3rem;
+  
+
+}
+.login_form_button a {
+  text-decoration: none;
+}
+.login_form_button a:visited {
+  text-decoration: none;
+  color: white;
+}
+.admin__image {
+  padding-top: 5%;
+  height: 25%;
+}
+.res_list_time {
+  width: 50px;
+}
+.res_list_name, .res_list_contact {
+  width: 150px
+}
+.res_list_table_type, .res_list_number {
+  width: 50px;
+}
+/* seznam rezervaci */
+.date-select {
+ color: black;
+}
+.reservation_card table {
+  border: 1px solid black;
+}
+.reservation_card {
+  overflow-x:auto;
+}
+.reservation_card table td {
+  border: none;
+}
+.seznam_rezervaci{
+  background-color: #f6fee6;
+}
+
+.pridani_menu {
+  text-align: center;
+}
+.menu_edition table tr td {
+  min-width: 50px;
+  
+}
+.menu_edit_type label {
+  width: 100px;
+
+
+} .menu_edit_price input, .menu_edit_weight input {
+  width: 50px;
+}
+.menu_edition {
+  overflow-x:auto;
+}
+.menu_edition table td {
+  border: none;
+  background-color: #f6fee6;
+  margin: 5px
+}
+.menu_edition table td input {
+  
+  margin: 5px
+}
+.menu_edit_cta {
+  max-width: 150px;
+  margin-bottom: 50px;
+}
+/*################################################################################################################################
+reservation responsivity
+################################################################################################################################*/
+
+@media (max-width: 900px) {
+  .reservation__container {
+    display: block;
+
+    padding: 0px;
+  }
+
+  .image__detail {
+    max-width: 250px;
+    height: auto;
+    margin: 8px;
+  }
+
+  .smallimage_wrapper > img {
+    display: block;
+
+    width: 116px;
+    margin: 12px;
+  }
+
+  .image_wrapper {
+
+    display:         flex;
+    margin: 32px 0px;
+    padding-top: 24px;
+    flex: initial;
+    justify-content: center;
+  }
+
+  .description .headline {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .description {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .reservation__container {
+    display: block;
+
+    padding: 0px;
+  }
+
+  .image__detail {
+    max-width: 180px;
+    height: 180px;
+    margin: 20px;
+  }
+
+  .smallimage_wrapper > img {
+    width: 90px;
+  }
+
+  table tr td {
+    min-width: 135px;
+  }
+}

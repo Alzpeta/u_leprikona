@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Petr Podskalský, Alžběta Pokorná, Richard Markovič, Jan Poláček, Filip Boye-Kofi" />
+  <title>Tvorba menu</title>
+  <meta name="robots" content="noindex, follow">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext"
+    type="text/css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body class="seznam_rezervaci">
+  <header class="header">
+
+    <div class="header__topbar">
+
+      <nav class="container header__nav" role="navigation">
+        <ul class="nav__ul" role="menu">
+          <li class="nav__li">
+            <a href="admin_index.html" class="nav__link " role="menuitem">Domů</a>
+          </li>
+
+          <li class="nav__li">
+            <a href="reservation_list.html" class="nav__link " role="menuitem">Seznam rezervací</a>
+          </li>
+
+          <li class="nav__li">
+            <a href="menu_edition.html" class="nav__link nav__link--current" role="menuitem">Tvorba menu</a>
+          </li>
+          <li class="nav__li">
+            <a href="index.html" class="nav__link" role="menuitem">Odhlásit se</a>
+          </li>
+
+
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main class="main" role="main">
+
+
+
+    <h1 class="headline section_content__headline">Přidání denního menu</h1>
+    <form class="subheadline section_content menu_edition "><label for="date" class="date-select">Datum</label><input
+        type="datetime-local" name="date" id="date">
+
+      <table>
+        <tr>
+          <th></th>
+          <th>Název</th>
+          <th>Cena</th>
+          <th>Gramáž</th>
+        </tr>
+        <tr>
+          <td class="menu_edit_type"><label for="polevka1">Polévka 1</label></td>
+          <td class="menu_edit_name"><input type="text" name="polevka1" id="polevka1"></td>
+          <td class="menu_edit_price"><input type="number" name="price" id="polevka1_price"></td>
+          <td class="menu_edit_weight"><input type="number" name="weight" id="polevka1_weight"></td>
+        </tr>
+        <tr>
+          <td class="menu_edit_type"><label for="polevka2">Polévka 2</label></td>
+          <td class="menu_edit_name"><input type="text" name="polevka2" id="polevka2"></td>
+          <td class="menu_edit_price"><input type="number" name="price" id="polevka2_price"></td>
+          <td class="menu_edit_weight"><input type="number" name="weight" id="polevka2_weight"></td>
+        </tr>
+        <tr>
+          <td class="menu_edit_type"><label for="hlj1">Hlavní jídlo 1</label></td>
+          <td class="menu_edit_name"><input type="text" name="hlj1" id="hlj1"></td>
+          <td class="menu_edit_price"><input type="number" name="price" id="hlj1_price"></td>
+          <td class="menu_edit_weight"><input type="number" name="weight" id="hlj1_weight"></td>
+        </tr>
+        <tr>
+          <td class="menu_edit_type"><label for="hlj2">Hlavní jídlo 2</label></td>
+          <td class="menu_edit_name"><input type="text" name="hlj2" id="hlj2"></td>
+          <td class="menu_edit_price"><input type="number" name="price" id="hlj2_price"></td>
+          <td class="menu_edit_weight"><input type="number" name="weight" id="hlj2_weight"></td>
+        </tr>
+        <tr>
+          <td class="menu_edit_type"><label for="hlj3">Hlavní jídlo 3</label></td>
+          <td class="menu_edit_name"><input type="text" name="hlj3" id="hlj3"></td>
+          <td class="menu_edit_price"><input type="number" name="price" id="hlj3_price"></td>
+          <td class="menu_edit_weight"><input type="number" name="weight" id="hlj3_weight"></td>
+        </tr>
+
+      </table>
+    </form>
+
+    <a href="#" class="cta menu_edit_cta">Uložit</a>
+  </main>
+
+
+  <footer class="footer">
+
+      <nav class="footer__nav" role="navigation">
+        <ul class="nav__ul" role=menu>
+          <li class="nav__li">
+            <a href="index.html" class="nav__link" role="menuitem">Domů</a>
+          </li>
+          <li class="nav__li">
+            <a href="permanent_menu.html" class="nav__link" role="menuitem">Stálé menu</a>
+          </li>
+          <li class="nav__li">
+            <a href="drink_menu.html" class="nav__link" role="menuitem">Nápojové menu</a>
+          </li>
+
+          <li class="nav__li">
+            <a href="reservation.html" class="nav__link" role="menuitem">Rezervace</a>
+          </li>
+
+          <li class="nav__li">
+            <a href="aboutus.html" class="nav__link" role="menuitem">O nás</a>
+          </li>
+
+          <li class="nav__li">
+            <a href="contact.html" class="nav__link" role="menuitem">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__copyright" role="contentinfo">
+        <p>Jedná se o studenský projekt</p>
+        <p>Copyright ©2021</p>
+
+      </div>
+  </footer>
+</body>
+
+</html>
